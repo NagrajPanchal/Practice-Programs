@@ -1,0 +1,30 @@
+// Write a program to find the largest of two numbers in java
+
+
+import java.util.Scanner;
+
+public class Greastest_2_Numbers
+{
+
+
+        public static void main (String[]args)
+        {
+
+            int number1,number2;
+            System.out.println("Enter any Number1 : ");
+            Scanner in = new Scanner(System.in);
+            number1 = in.nextInt();
+            System.out.println(+number1+ " to compare enter Number2 : ");
+            number2 = in.nextInt();
+
+            if (number1 == number2)
+                System.out.println (+number1+ " & " +number2 +" Both are equal");
+            else if (number1 > number2)
+                System.out.println (number1 + " is Greater");
+
+            else
+                System.out.println (number2 + " is Greater");
+
+        }
+
+}
