@@ -7,10 +7,16 @@ public class Sum_N_Natural_Numbers
     public static void main (String[]args)
     {
 
-        int n;
         System.out.println("Enter how any numbers you want to Sum from 0 to .....");
         Scanner in = new Scanner(System.in);
-        n = in.nextInt();
+        int n = in.nextInt();
         System.out.println ("Sum of N Natural Number total : " +n*(n+1)/2);
     }
 }
+
+/*
+n =5
+n+1 = 5+1 = 6
+        (n+1)/2 = 6/2 =3
+n*(n+1)/2 = 5*3 = 15
+*/
