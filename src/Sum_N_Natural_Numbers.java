@@ -8,8 +8,8 @@ public class Sum_N_Natural_Numbers
     {
 
         System.out.println("Enter how many numbers you want to Sum from 0 to .....");
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
+        Scanner in = new Scanner(System.in); //User can define
+        int n = in.nextInt(); //Intiger initialize here
         System.out.println ("Sum of N Natural Number total : " +n*(n+1)/2);
     }
 }
