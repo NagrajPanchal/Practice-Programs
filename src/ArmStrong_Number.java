@@ -5,51 +5,23 @@ public class ArmStrong_Number
 {
     public static void main (String[]args)
     {
-        int num, len;
+        int num,arm=0,rem,c;
         System.out.print("Enter any Number : ");
         Scanner obj = new Scanner(System.in);
         num = obj.nextInt();
-
-        // function to get order(length)
-        len = order (num);
+        c=num;
+        while (num>0)
+        {
+            rem=num%10;
+            arm=(rem*rem*rem)+arm;
+            num=num/10;
+        }
 
         // check if Armstrong
-        if (armstrong (num, len))
-            System.out.println(num + " is armstrong");
+        if (c==arm)
+            System.out.println(c + " is ArmStrong");
         else
-            System.out.println(num + " is armstrong");
-
+            System.out.println(c + " is Not ArmStrong");
     }
 
-
-    static int order (int x)
-    {
-        int len = 0;
-        while (x != 0 )
-        {
-            len++;
-            x = x / 10;
-        }
-        return len;
-    }
-
-    static boolean armstrong (int num, int len)
-    {
-
-        int sum = 0, temp, digit;
-        temp = num;
-
-        // loop to extract digit, find power & add to sum
-        while (temp != 0)
-        {
-            // extract digit
-            digit = temp % 10;
-
-            // add power to sum
-            sum = sum + (int)Math.pow(digit, len);
-            temp /= 10;
-        };
-
-        return num == sum;
-    }
 }
