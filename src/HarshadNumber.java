@@ -7,8 +7,8 @@ public class HarshadNumber {
         int result = 0;
         while(n != 0)
         {
-            int pick_last = n % 10;
-            result = result + pick_last;
+            int pickLast = n % 10;
+            result = result + pickLast;
             n = n / 10;
         }
 		/*use condition to check whether the number entered by

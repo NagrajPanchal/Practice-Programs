@@ -6,8 +6,8 @@ public class StrongNumber
     public static void main(String[] args)
     {
         System.out.print("Enter any number : ");
-        Scanner obj = new Scanner(System.in);
-        int n = obj.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         int sum= 0,num=n,digit;
         while(n>0)
         {
@@ -18,7 +18,7 @@ public class StrongNumber
                 fact= fact * i;
             }
             sum = sum + fact;
-            n /= 10;
+            n /= 10; // n=n/10;
         }
         if (num == sum)
         {
