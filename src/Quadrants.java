@@ -1,4 +1,4 @@
-// Quadrants
+// Quadrants coordinats
 
 import java.util.Scanner;
 public class Quadrants
