@@ -16,7 +16,7 @@ public class AdditionTwoFractions
         int den2 = scanner.nextInt();
         int num, den, x;
         System.out.print("("+num1+" / "+den1+") + ("+num2+" / "+den2+") = ");
-        //logic for calculating sum of two fractions
+        //logic for calculating sum of 2 fractions
         if(den1 == den2)
         {
             num = num1 + num2 ;

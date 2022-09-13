@@ -15,11 +15,11 @@ public class Replace0to1
         {
             if(str.charAt(i) == '0')
             {
-                str1 = str1 + '1';  // if number is 0 then replace with 1
+                str1 = str1 + '1';  // if number is 0 then replace with '1'
             }
             else
             {
-            str1 = str1 + str.charAt(i); 
+            str1 = str1 + str.charAt(i);
             }
         }
         System.out.print("Converted Number : " +str1);
